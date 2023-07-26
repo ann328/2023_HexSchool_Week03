@@ -1,0 +1,93 @@
+footer {
+  background: $primary;
+  .footer--container {
+    @include df-jcsb;
+    flex-wrap: wrap;
+    @include container;
+    padding: 48px 0 32px 0;
+    @include pc {
+      padding: 48px 36px 40px 36px;
+    }
+    @include tab {
+      padding: 48px 36px 40px 36px;
+    }
+    @include phone {
+      padding: 24px 14px 24px 13px;
+    }
+  }
+}
+.footer--nav_samll {
+  @include df-jcsb;
+  width: 464px;
+  margin-bottom: 36px;
+  @include tab {
+    margin-bottom: 32px;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.footer--nav_contact {
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  .footer--nav_contact_icon {
+    font-size: 36px;
+  }
+  @include phone {
+    font-size: 16px;
+    .footer--nav_contact_icon {
+      font-size: 18px;
+    }
+  }
+}
+.footer--nav_img {
+  @include df-jcsb;
+  width: 208px;
+  img {
+    width: 48px;
+    height: 48px;
+  }
+  @include tab {
+    width: 19.7%;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @include phone {
+    width: 23%;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.footer--hr_white {
+  width: 100%;
+  margin: 32px 0 32px 0;
+  @include phone {
+    margin: 24px 0 16px 0;
+  }
+}
+.footer--contain_copyright {
+  width: 100%;
+  color: #fff;
+  @include df-jcsb;
+  @include phone {
+    flex-direction: column;
+    p {
+      margin-bottom: 8px;
+    }
+  }
+}
+.footer--contain_nav {
+  @include df-jcsb;
+  width: 174px;
+  @include phone {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
