@@ -10,10 +10,10 @@ body {
   margin: 0 auto;
   padding: 0 12px;
   @include tab {
-    max-width: 720px;
+    max-width: 920px;
   }
   @include phone {
-    max-width: 372px;
+    max-width: 743px;
   }
 }
 img {
@@ -27,4 +27,12 @@ a {
   &:hover {
     color: black;
   }
+}
+h4 {
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+time {
+  font-size: 14px;
+  color: $time;
 }
