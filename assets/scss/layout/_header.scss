@@ -1,60 +1,42 @@
 header {
   background: $primary;
-}
-.header--container {
-  @include df-jcsb;
-  @include container;
   padding: 16px 0;
-  @include pc {
-    padding: 12px 36px;
+  @include phone {
+    padding-bottom: 0;
   }
-  @include tab {
-    padding: 12px 36px;
+}
+.nav {
+  @include df-jcsb;
+  &--logo_img {
+    display: block;
+    width: 80px;
+    height: 48.57px;
+    background: center/cover no-repeat url(../images/logo-white.png);
+  }
+  &--ul {
+    display: flex;
+    &_link {
+      display: block;
+      font-size: 20px;
+      padding: 9px 0 9px 32px;
+    }
   }
   @include phone {
     flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-}
-
-.header--logo_img {
-  @include phone {
-    margin-left: 15px;
-    align-self: start;
-  }
-  img {
-    width: 80px;
-    height: 48.57px;
-    @include phone {
-      margin: 16px 0;
+    padding-left: 0;
+    padding-right: 0;
+    &--logo_img {
+      margin: 0 0 15px 15px;
     }
-  }
-}
-.header--nav {
-  @include df-jcsb;
-  align-items: center;
-  width: 492px;
-  font-size: 20px;
-  @include tab {
-    font-size: 20px;
-  }
-  @include phone {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .header--nav_list {
-    @include phone {
-      width: 50%;
-      border: 1px solid #fff;
-    }
-    a {
-      display: block;
-      @include phone {
-        display: block;
-        text-align: center;
+    &--ul {
+      flex-wrap: wrap;
+      &_list {
+        width: 50%;
+        border: 1px solid white;
+      }
+      &_link {
         padding: 12px 0;
+        text-align: center;
       }
     }
   }

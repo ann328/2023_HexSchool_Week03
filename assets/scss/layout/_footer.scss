@@ -1,93 +1,109 @@
 footer {
-  background: $primary;
-  .footer--container {
-    @include df-jcsb;
-    flex-wrap: wrap;
-    @include container;
-    padding: 48px 0 32px 0;
-    @include pc {
-      padding: 48px 36px 40px 36px;
-    }
-    @include tab {
-      padding: 48px 36px 40px 36px;
-    }
-    @include phone {
-      padding: 24px 14px 24px 13px;
-    }
-  }
-}
-.footer--nav_samll {
-  @include df-jcsb;
-  width: 464px;
-  margin-bottom: 36px;
+  background-color: $primary;
+  padding: 48px 0 32px 0;
   @include tab {
-    margin-bottom: 32px;
+    padding: 48px 0 40px 0;
   }
   @include phone {
-    display: none;
+    padding: 24px 0;
   }
 }
-.footer--nav_contact {
-  font-size: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  .footer--nav_contact_icon {
-    font-size: 36px;
-  }
-  @include phone {
-    font-size: 16px;
-    .footer--nav_contact_icon {
-      font-size: 18px;
+.footer--nav {
+  @include df-jcsb;
+  &_samll {
+    &_ul {
+      display: flex;
+      margin-bottom: 24px;
+      &_link {
+        display: block;
+        padding: 12px 48px 12px 0;
+      }
+    }
+    &_contact {
+      font-size: 36px;
+      li:first-child {
+        margin-bottom: 8px;
+      }
+      &_icon {
+        font-size: 36px;
+        padding: 6px;
+        vertical-align: middle;
+        margin-right: 16px;
+      }
     }
   }
-}
-.footer--nav_img {
-  @include df-jcsb;
-  width: 208px;
-  img {
-    width: 48px;
-    height: 48px;
+  &_img {
+    display: flex;
+    &_link {
+      display: block;
+      max-width: 48px;
+      max-height: 48px;
+      margin-left: 32px;
+    }
   }
   @include tab {
-    width: 19.7%;
-    img {
-      width: 40px;
-      height: 40px;
+    &_samll {
+      &_ul {
+        &_link {
+          padding: 8px 48px 8px 0;
+        }
+      }
+    }
+    &_img {
+      &_link {
+        max-width: 40px;
+        max-height: 40px;
+        margin-left: 16px;
+      }
     }
   }
   @include phone {
-    width: 23%;
-    img {
-      width: 24px;
-      height: 24px;
+    &_samll {
+      &_ul {
+        display: none;
+        margin-bottom: 24px;
+      }
+      &_contact {
+        font-size: 16px;
+        &_icon {
+          font-size: 24px;
+          padding: 3px;
+          vertical-align: middle;
+          margin-right: 8px;
+        }
+      }
+    }
+    &_img {
+      &_link {
+        max-width: 24px;
+        max-height: 24px;
+        margin-left: 8px;
+      }
     }
   }
 }
 .footer--hr_white {
-  width: 100%;
-  margin: 32px 0 32px 0;
-  @include phone {
-    margin: 24px 0 16px 0;
-  }
+  margin: 32px 0;
 }
-.footer--contain_copyright {
-  width: 100%;
+.footer--contain {
   color: #fff;
   @include df-jcsb;
-  @include phone {
-    flex-direction: column;
-    p {
-      margin-bottom: 8px;
-    }
+  &_list {
+    display: flex;
   }
-}
-.footer--contain_nav {
-  @include df-jcsb;
-  width: 174px;
+  &_link {
+    font-size: 14px;
+    display: block;
+    padding: 1px 0 1px 48px;
+  }
   @include phone {
     flex-direction: column;
-    gap: 8px;
+    &_list {
+      flex-direction: column;
+    }
+    &_link {
+      font-size: 16px;
+      padding: 8px 0 0 0;
+    }
   }
 }
