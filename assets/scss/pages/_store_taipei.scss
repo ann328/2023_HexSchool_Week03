@@ -1,0 +1,48 @@
+.taipei--title {
+  padding: 96px 0 32px 0;
+
+  &-h2 {
+    padding: 0 12px 32px 8px;
+  }
+
+  h2 {
+    border-left: 8px solid $secorday;
+    padding-left: 12px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  @include tab {
+    padding: 80px 0 32px 0;
+  }
+
+  @include phone {
+    padding: 40px 0 32px 0;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+.taipei--select_area {
+  label {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+
+  select {
+    width: 304px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+  }
+  @include phone {
+    label {
+      font-size: 16px;
+      margin-right: 8px;
+    }
+
+    select {
+      width: 73.6%;
+    }
+  }
+}

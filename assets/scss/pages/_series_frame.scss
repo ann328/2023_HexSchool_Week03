@@ -7,8 +7,8 @@
       border-left: 1px solid #dcdcdc;
       border-right: 1px solid #dcdcdc;
     }
-    li:first-child{
-      a{
+    li:first-child {
+      a {
         border-bottom: 8px solid $primary;
       }
     }
@@ -41,7 +41,6 @@
 }
 
 .frame--banner {
-
   &_glasses {
     width: 50%;
     min-height: 296px;
@@ -84,12 +83,12 @@
   text-align: center;
   margin-bottom: 80px;
 
-  h1 {
+  h2 {
     font-size: 42px;
   }
 
-  h2 {
-    font-size: 24px;
+  h3 {
+    font-size: 32px;
     margin-bottom: 32px;
   }
 
@@ -126,7 +125,7 @@
       li:nth-child(12) {
         display: none;
       }
-      img{
+      img {
         width: 100%;
       }
     }
@@ -134,18 +133,18 @@
 
   @include phone {
     padding: 40px 0;
-    h1 {
+    h2 {
       font-size: 24px;
     }
 
-    h2 {
+    h3 {
       font-size: 24px;
       margin-bottom: 24px;
     }
 
     &_list {
       flex-direction: column;
-      gap:24px;
+      gap: 24px;
 
       li {
         width: 100%;
@@ -154,25 +153,25 @@
       li:nth-child(7),
       li:nth-child(8),
       li:nth-child(9),
-      li:nth-child(10){
+      li:nth-child(10) {
         display: none;
       }
     }
   }
 }
-.frame--button{
+.frame--button {
   justify-content: center;
   margin-bottom: 80px;
-  a{
+  a {
     display: block;
     border: 1px solid $button;
   }
 
-  @include tab{
-    .button-p-se{
+  @include tab {
+    .button-p-se {
       a {
-       padding: 11px 0;
-       }
-     }
+        padding: 11px 0;
+      }
+    }
   }
 }

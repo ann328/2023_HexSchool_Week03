@@ -8,7 +8,7 @@
     color: $secorday;
   }
 
-  h1 {
+  h2 {
     font-size: 64px;
     color: $secorday;
     margin-bottom: 4px;
@@ -33,7 +33,7 @@
       font-size: 16px;
     }
 
-    h1 {
+    h2 {
       font-size: 24px;
       margin-bottom: 8px;
     }
@@ -45,8 +45,8 @@
   padding: 80px 0;
   text-align: center;
 
-  h2 {
-    @include h2(48px, $secorday, 24px);
+  h3 {
+    @include h3(48px, $secorday, 24px);
   }
 
   &_list {
@@ -61,8 +61,8 @@
         margin-bottom: 16px;
       }
 
-      h3 {
-        @include h3(24px, $secorday, normal, 8px);
+      h4 {
+        @include h4(24px, $secorday, normal, 8px);
       }
 
       p {
@@ -85,7 +85,7 @@
   @include phone {
     padding: 40px 0;
 
-    h2 {
+    h3 {
       font-size: 24px;
       margin-bottom: 32px;
     }
@@ -105,8 +105,8 @@
   padding: 80px 0;
   text-align: center;
 
-  h2 {
-    @include h2(48px, $secorday, 48px);
+  h3 {
+    @include h3(48px, $secorday, 48px);
   }
 
   &_list {
@@ -114,15 +114,14 @@
     li {
       text-align: center;
 
-
       img {
         width: 416px;
         max-height: 416px;
         margin-bottom: 8px;
       }
 
-      h3 {
-        @include h3(48px, $primary, italic, 0);
+      h4 {
+        @include h4(48px, $primary, italic, 0);
         font-weight: bold;
       }
     }
@@ -140,7 +139,7 @@
 
     @include phone {
       padding: 40px 0;
-      h2 {
+      h3 {
         font-size: 24px;
         margin-bottom: 24px;
       }
@@ -157,8 +156,8 @@
   background: center/cover no-repeat url(../images/index-bg.png);
   text-align: center;
   padding: 80px 0;
-  h2 {
-    @include h2(48px, #fff, 48px);
+  h3 {
+    @include h3(48px, #fff, 48px);
   }
   li {
     min-width: 50%;
@@ -173,8 +172,8 @@
     width: 100%;
     min-height: 240px;
   }
-  h3 {
-    @include h3(48px, $primary, italic, 0);
+  h4 {
+    @include h4(48px, $primary, italic, 0);
     padding: 8px 0;
     background-color: #fff;
   }
@@ -188,8 +187,8 @@
   @include phone {
     background: center/cover no-repeat url(../images/index-bg-sm.png);
     padding: 40px 0;
-    h2 {
-      @include h2(24px, #fff, 24px);
+    h3 {
+      @include h3(24px, #fff, 24px);
     }
     &_double {
       background: center/cover no-repeat url(../images/home-section4-1-sm.png);
@@ -201,8 +200,8 @@
 }
 .home--recommend {
   padding: 80px 0;
-  h2 {
-    @include h2(48px, $secorday, 48px);
+  h3 {
+    @include h3(48px, $secorday, 48px);
     text-align: center;
   }
   &-list {
@@ -230,8 +229,8 @@
   }
   @include phone {
     padding: 40px 0;
-    h2 {
-      @include h2(24px, $secorday, 24px);
+    h3 {
+      @include h3(24px, $secorday, 24px);
     }
     &-list {
       flex-direction: column;
@@ -245,8 +244,8 @@
   background-color: $bg-pink;
   padding: 80px 0;
 
-  h2 {
-    @include h2(48px, $secorday, 48px);
+  h3 {
+    @include h3(48px, $secorday, 48px);
     text-align: center;
   }
   p {
@@ -272,8 +271,8 @@
     }
   }
   @include tab {
-    h2 {
-      @include h2(48px, $secorday, 24px);
+    h3 {
+      @include h3(48px, $secorday, 24px);
     }
     &-form {
       width: 77.42%;
@@ -287,8 +286,8 @@
   @include phone {
     padding: 40px 0;
 
-    h2 {
-      @include h2(24px, $secorday, 24px);
+    h3 {
+      @include h3(24px, $secorday, 24px);
     }
     &-form {
       width: 100%;

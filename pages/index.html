@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>index</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
-    rel="stylesheet" />
-  <title>index</title>
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
     <section class="home--banner">
       <div class="container">
         <p>Promise-Desert 2020 早春系列</p>
-        <h1>看得清，才能看得遠</h1>
+        <h2>看得清，才能看得遠</h2>
         <a href="#">立即購買</a>
       </div>
     </section>
     <section class="home--major">
       <div class="container">
-        <h2>用專業的心，做專業的事</h2>
+        <h3>用專業的心，做專業的事</h3>
         <ul class="home--major_list d-f">
           <li>
             <img src="../assets/images/home-section2-1.png" alt="paid" />
-            <h3>單一價格</h3>
+            <h4>單一價格</h4>
             <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
           </li>
           <li>
             <img src="../assets/images/home-section2-2.png" alt="schedule" />
-            <h3>20 分鐘即可取件</h3>
+            <h4>20 分鐘即可取件</h4>
             <p>
               為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
               20 分鐘即可完成。
             </p>
           </li>
           <li>
-            <img src="../assets/images/home-section2-3.png" alt="favorite_border" />
-            <h3>安心售後服務</h3>
+            <img
+              src="../assets/images/home-section2-3.png"
+              alt="favorite_border"
+            />
+            <h4>安心售後服務</h4>
             <p>
               我們提供長達 120
               天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
@@ -47,7 +50,7 @@
           </li>
           <li>
             <img src="../assets/images/home-sectioin2-4.png" alt="voicemail" />
-            <h3>關於鏡片</h3>
+            <h4>關於鏡片</h4>
             <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
           </li>
         </ul>
@@ -55,41 +58,47 @@
     </section>
     <section class="home--classic">
       <div class="container">
-        <h2>經典系列鏡框</h2>
+        <h3>經典系列鏡框</h3>
         <ul class="home--classic_list d-f">
           <li>
             <img src="../assets/images/home-section3-1.png" alt="OPTICAL_img" />
-            <h3>OPTICAL</h3>
+            <h4>OPTICAL</h4>
           </li>
           <li>
-            <img src="../assets/images/home-section3-2.png" alt="SUNGLASSES_img" />
-            <h3>SUNGLASSES</h3>
+            <img
+              src="../assets/images/home-section3-2.png"
+              alt="SUNGLASSES_img"
+            />
+            <h4>SUNGLASSES</h4>
           </li>
           <li>
-            <img src="../assets/images/home-section3-3.png" alt="FUNCTIONAL_img" />
-            <h3>FUNCTIONAL</h3>
+            <img
+              src="../assets/images/home-section3-3.png"
+              alt="FUNCTIONAL_img"
+            />
+            <h4>FUNCTIONAL</h4>
           </li>
         </ul>
       </div>
     </section>
     <section class="home--jointDesign">
       <div class="container">
-        <h2>聯名設計鏡框</h2>
+        <h3>聯名設計鏡框</h3>
         <ul class="home--jointDesign_list d-f">
           <li>
             <p class="home--jointDesign_double"></p>
-            <h3>DOUBLE A+</h3>
+            <h4>DOUBLE A+</h4>
           </li>
           <li>
             <p class="home--jointDesign_youth"></p>
-            <h3>YOUTH</h3>
+            <h4>YOUTH</h4>
           </li>
         </ul>
       </div>
     </section>
     <section class="home--recommend">
       <div class="container">
-        <h2>顧客推薦</h2>
+        <h3>顧客推薦</h3>
         <ul class="home--recommend-list d-f">
           <li>
             <img src="../assets/images/home-section5-1.png" alt="Jessy" />
@@ -136,7 +145,7 @@
     </section>
     <section class="home--contact">
       <div class="container">
-        <h2>聯絡我們</h2>
+        <h3>聯絡我們</h3>
         <div class="home--contact-form">
           <p>
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
@@ -144,25 +153,54 @@
           <form name="contact">
             <div class="home--contact-form-name">
               <label for="name">姓名</label>
-              <input class="input" type="text" id="name" name="name" placeholder="陳小明" />
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="陳小明"
+              />
             </div>
             <div class="home--contact-form-list">
               <label for="phone">聯絡電話</label>
-              <input class="input" type="tel" id="phone" name="phone" placeholder="0912-345-678" />
+              <input
+                class="input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="0912-345-678"
+              />
             </div>
             <div class="home--contact-form-list">
               <label for="email">電子郵件</label>
-              <input class="input" type="email" id="email" name="email" placeholder="example@email.com" />
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+              />
             </div>
             <div class="home--contact-form-list">
               <label for="opinion">意見反應</label>
-              <textarea class="input opinion" id="opinion" name="opinion" placeholder="請輸入您的意見">
+              <textarea
+                class="input opinion"
+                id="opinion"
+                name="opinion"
+                placeholder="請輸入您的意見"
+              >
               </textarea>
             </div>
             <div class="home--contact-form-list d-f">
-              <input class="checkboxs" type="checkbox" id="checkbox" name="checkbox" />
+              <input
+                class="checkboxs"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+              />
               <label for="checkbox" class="checkbox-la">
-              我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+              >
             </div>
             <div class="home--contact-form-send">
               <a href="#">確認送出</a>
@@ -174,7 +212,6 @@
 
     <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
-</body>
-
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>

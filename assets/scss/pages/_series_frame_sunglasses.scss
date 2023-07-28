@@ -6,10 +6,9 @@
       border-top: 1px solid #dcdcdc;
       border-left: 1px solid #dcdcdc;
       border-right: 1px solid #dcdcdc;
-
     }
-    li:nth-child(2){
-      a{
+    li:nth-child(2) {
+      a {
         border-bottom: 8px solid $primary;
       }
     }
@@ -86,11 +85,11 @@
   text-align: center;
   margin-bottom: 80px;
 
-  h1 {
+  h2 {
     font-size: 42px;
   }
 
-  h2 {
+  h3 {
     font-size: 24px;
     margin-bottom: 32px;
   }
@@ -124,7 +123,7 @@
         width: 43.75%;
       }
 
-      img{
+      img {
         width: 100%;
       }
     }
@@ -132,7 +131,7 @@
 
   @include phone {
     padding: 40px 0;
-    h1 {
+    h2 {
       font-size: 24px;
     }
 
@@ -143,36 +142,35 @@
 
     &_list {
       flex-direction: column;
-      gap:24px;
+      gap: 24px;
 
       li {
         width: 100%;
       }
-      li:nth-child(5){
+      li:nth-child(5) {
         display: none;
       }
     }
   }
 }
-.sunglasses--button{
+.sunglasses--button {
   justify-content: center;
   margin-bottom: 80px;
-  a{
+  a {
     display: block;
     border: 1px solid $button;
   }
-  .button-p-se{
+  .button-p-se {
     a {
-     padding: 11px 0;
-     }
-   }
-
-  @include phone{
-    .button-p-se{
-      a {
-       padding: 11.5px 0;
-       }
-     }
+      padding: 11px 0;
+    }
   }
-  
+
+  @include phone {
+    .button-p-se {
+      a {
+        padding: 11.5px 0;
+      }
+    }
+  }
 }
