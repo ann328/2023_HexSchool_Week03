@@ -14,7 +14,6 @@ header {
     background: center/cover no-repeat url(../images/logo-white.png);
   }
   &--ul {
-    display: flex;
     &_link {
       display: block;
       font-size: 20px;
@@ -23,8 +22,7 @@ header {
   }
   @include phone {
     flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
+    @include px-0;
     &--logo_img {
       margin: 0 0 15px 15px;
     }

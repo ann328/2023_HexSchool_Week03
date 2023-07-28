@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+    rel="stylesheet" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
     <section class="home--banner">
       <div class="container">
         <p>Promise-Desert 2020 早春系列</p>
@@ -22,7 +23,7 @@
     <section class="home--major">
       <div class="container">
         <h2>用專業的心，做專業的事</h2>
-        <ul class="home--major_list">
+        <ul class="home--major_list d-f">
           <li>
             <img src="../assets/images/home-section2-1.png" alt="paid" />
             <h3>單一價格</h3>
@@ -37,10 +38,7 @@
             </p>
           </li>
           <li>
-            <img
-              src="../assets/images/home-section2-3.png"
-              alt="favorite_border"
-            />
+            <img src="../assets/images/home-section2-3.png" alt="favorite_border" />
             <h3>安心售後服務</h3>
             <p>
               我們提供長達 120
@@ -58,23 +56,17 @@
     <section class="home--classic">
       <div class="container">
         <h2>經典系列鏡框</h2>
-        <ul class="home--classic_list">
+        <ul class="home--classic_list d-f">
           <li>
             <img src="../assets/images/home-section3-1.png" alt="OPTICAL_img" />
             <h3>OPTICAL</h3>
           </li>
           <li>
-            <img
-              src="../assets/images/home-section3-2.png"
-              alt="SUNGLASSES_img"
-            />
+            <img src="../assets/images/home-section3-2.png" alt="SUNGLASSES_img" />
             <h3>SUNGLASSES</h3>
           </li>
           <li>
-            <img
-              src="../assets/images/home-section3-3.png"
-              alt="FUNCTIONAL_img"
-            />
+            <img src="../assets/images/home-section3-3.png" alt="FUNCTIONAL_img" />
             <h3>FUNCTIONAL</h3>
           </li>
         </ul>
@@ -83,7 +75,7 @@
     <section class="home--jointDesign">
       <div class="container">
         <h2>聯名設計鏡框</h2>
-        <ul class="home--jointDesign_list">
+        <ul class="home--jointDesign_list d-f">
           <li>
             <p class="home--jointDesign_double"></p>
             <h3>DOUBLE A+</h3>
@@ -98,7 +90,7 @@
     <section class="home--recommend">
       <div class="container">
         <h2>顧客推薦</h2>
-        <ul class="home--recommend-list">
+        <ul class="home--recommend-list d-f">
           <li>
             <img src="../assets/images/home-section5-1.png" alt="Jessy" />
             <div class="home--recommend-name">
@@ -149,60 +141,30 @@
           <p>
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
-          <form action="post" name="contact">
+          <form name="contact">
             <div class="home--contact-form-name">
               <label for="name">姓名</label>
-              <input
-                class="input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="陳小明"
-              />
+              <input class="input" type="text" id="name" name="name" placeholder="陳小明" />
             </div>
             <div class="home--contact-form-list">
               <label for="phone">聯絡電話</label>
-              <input
-                class="input"
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="0912-345-678"
-              />
+              <input class="input" type="tel" id="phone" name="phone" placeholder="0912-345-678" />
             </div>
             <div class="home--contact-form-list">
               <label for="email">電子郵件</label>
-              <input
-                class="input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@email.com"
-              />
+              <input class="input" type="email" id="email" name="email" placeholder="example@email.com" />
             </div>
             <div class="home--contact-form-list">
               <label for="opinion">意見反應</label>
-              <textarea
-                class="input opinion"
-                id="opinion"
-                name="opinion"
-                placeholder="請輸入您的意見"
-              >
+              <textarea class="input opinion" id="opinion" name="opinion" placeholder="請輸入您的意見">
               </textarea>
             </div>
-            <div class="home--contact-form-list">
-              <input
-                class="checkbox"
-                type="checkbox"
-                id="checkbox"
-                name="checkbox"
-              />
-              <label for="checkbox"
-                >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
-              >
+            <div class="home--contact-form-list d-f">
+              <input class="checkboxs" type="checkbox" id="checkbox" name="checkbox" />
+              <label for="checkbox" class="checkbox-la">
+              我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
             </div>
             <div class="home--contact-form-send">
-              <!-- <input type="submit" value="確認送出" class="send" /> -->
               <a href="#">確認送出</a>
             </div>
           </form>
@@ -212,6 +174,7 @@
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

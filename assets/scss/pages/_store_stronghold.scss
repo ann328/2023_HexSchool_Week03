@@ -1,0 +1,96 @@
+* {
+    outline: 1px solid red;
+}
+
+.store--title {
+    padding: 96px 0 32px 0;
+
+    &-h1 {
+        padding: 0 12px 32px 8px;
+    }
+
+    h1 {
+        border-left: 8px solid $secorday;
+        padding-left: 12px;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    @include tab {
+        padding: 80px 0 32px 0;
+    }
+
+    @include phone {
+        padding: 40px 0 32px 0;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+}
+
+.store--select_area {
+    label {
+        font-size: 24px;
+        margin-right: 16px;
+    }
+
+    select {
+        width: 304px;
+        padding: 6px 12px;
+        border: 1px solid #CED4DA;
+    }
+}
+
+.store--stronghold {
+    padding: 40px 0px 80px 0px;
+
+    &_list {
+        flex-wrap: wrap;
+        gap: 48px 24px;
+
+        li {
+            max-width: 32.09%;
+
+            img {
+                min-height: 224px;
+            }
+
+            h2 {
+                font-size: 24px;
+                padding: 8px 0 8px 24px;
+                border: 1px solid #dee2e6;
+            }
+        }
+    }
+
+    &_contact {
+        padding: 19px 24px 16px 24px;
+        border: 1px solid #dee2e6;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    &_icon {
+        font-size: 24px;
+        margin-right: 8px;
+        padding: 3px;
+    }
+
+    &_link {
+        border: 1px solid #dee2e6;
+
+        a {
+            text-align: center;
+            display: block;
+            padding: 12px 0;
+            background-color: #000;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

@@ -50,7 +50,6 @@
   }
 
   &_list {
-    display: flex;
     gap: 24px;
 
     li {
@@ -94,7 +93,6 @@
     &_list {
       li {
         max-width: 100%;
-
         img {
           margin-bottom: 24px;
         }
@@ -112,10 +110,10 @@
   }
 
   &_list {
-    display: flex;
     gap: 24px;
     li {
       text-align: center;
+
 
       img {
         width: 416px;
@@ -161,9 +159,6 @@
   padding: 80px 0;
   h2 {
     @include h2(48px, #fff, 48px);
-  }
-  &_list {
-    display: flex;
   }
   li {
     min-width: 50%;
@@ -211,7 +206,6 @@
     text-align: center;
   }
   &-list {
-    display: flex;
     gap: 24px;
     li {
       width: 25%;
@@ -248,7 +242,7 @@
   }
 }
 .home--contact {
-  background-color: $pink;
+  background-color: $bg-pink;
   padding: 80px 0;
 
   h2 {

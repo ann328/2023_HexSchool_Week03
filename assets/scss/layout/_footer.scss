@@ -12,7 +12,6 @@ footer {
   @include df-jcsb;
   &_samll {
     &_ul {
-      display: flex;
       margin-bottom: 24px;
       &_link {
         display: block;
@@ -33,7 +32,6 @@ footer {
     }
   }
   &_img {
-    display: flex;
     &_link {
       display: block;
       max-width: 48px;
@@ -88,9 +86,6 @@ footer {
 .footer--contain {
   color: #fff;
   @include df-jcsb;
-  &_list {
-    display: flex;
-  }
   &_link {
     font-size: 14px;
     display: block;

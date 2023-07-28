@@ -1,9 +1,13 @@
 $primary: #aa0601;
 $secorday: #650300;
-$other: #fbf2f2;
 $shadow: #dee2e6;
 $time: #707070;
-$pink: #fbf2f2;
+$bg-pink: #fbf2f2;
+$product-bd:#5F3E2D;
+$product-bl:#B75929;
+$button:#555555;
+$bg-button:#F2F2F2;
+
 
 @mixin df-jcsb {
   display: flex;
@@ -34,7 +38,6 @@ $pink: #fbf2f2;
 
 @mixin section--contain_contactUs-form-input {
   margin-bottom: 16px;
-
   input {
     width: 100%;
     padding: 6px 12px;
@@ -42,6 +45,10 @@ $pink: #fbf2f2;
     margin-top: 8px;
     background-color: transparent;
   }
+}
+@mixin px-0{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @mixin tab {
@@ -55,7 +62,9 @@ $pink: #fbf2f2;
     @content;
   }
 }
-
+.d-f{
+  display: flex;
+}
 .p-3 {
   padding-left: -12px;
   padding-right: -12px;
@@ -71,11 +80,61 @@ $pink: #fbf2f2;
   resize: none;
   min-height: 136px;
 }
-.checkbox {
+.checkboxs {
   margin: 0px 4px 0 4px;
   width: 20px;
   height: 20px;
   background: #fff;
   border: 1px solid #000000;
+  border-radius: 4px;
   accent-color: #aa0601;
+}
+
+.product-bd{
+  margin-right: 8px;
+  background: $product-bd;
+  accent-color: $product-bd;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid $product-bd;
+  display: inline-block;
+}
+.product-bl{
+  margin-right: 8px;
+  background: $product-bl;
+  accent-color: $product-bl;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid $product-bl;
+  display: inline-block;
+}
+.button-p{
+  width: 42px;
+  text-align: center;
+  a{
+    font-size: 18px;
+    padding: 12px 0;
+    color: $button;
+    &:hover{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+}
+.button-p-se{
+  width: 81px;
+  text-align: center;
+  a{
+    font-size: 19px;
+    padding: 11.5px 0;
+    background: $bg-button;
+    color: $button;
+    &:hover{
+      background-color: #000;
+      color: #fff;
+    }
+  }
 }
