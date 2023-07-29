@@ -1,0 +1,104 @@
+.blog {
+  gap: 60px 24px;
+  flex-direction: column;
+  margin-bottom: 124px;
+  @include tab {
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+  @include phone {
+    margin-bottom: 64px;
+  }
+}
+.blog--item {
+  gap: 24px;
+  img {
+    max-height: 400px;
+  }
+  &_card {
+    @include df-jcsb;
+    flex-direction: column;
+    align-items: flex-end;
+    .d-n {
+      display: none;
+    }
+    a {
+      font-size: 36px;
+      color: $secorday;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+  &_name {
+    h3 {
+      font-size: 32px;
+      color: $secorday;
+    }
+  }
+  &_contain {
+    @include df-jcsb;
+    margin-bottom: 16px;
+    align-items: center;
+    h4 {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 20px;
+    color: $button;
+  }
+  @include tab {
+    gap: 24px;
+    img {
+      min-width: 48.27%;
+      max-height: 208px;
+    }
+    &_card {
+      .d-b {
+        display: none;
+      }
+      .d-n {
+        display: block;
+      }
+      a {
+        display: none;
+      }
+    }
+    &_name {
+      h3 {
+        font-size: 24px;
+      }
+    }
+    &_contain {
+      @include df-jcsb;
+      margin-bottom: 0px;
+      align-items: center;
+      h4 {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  @include phone {
+    gap: 8px;
+    flex-direction: column;
+    img {
+      min-width: 100%;
+    }
+    &_card {
+      .d-n {
+        display: none;
+      }
+    }
+    &_name {
+      width: 100%;
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+}
