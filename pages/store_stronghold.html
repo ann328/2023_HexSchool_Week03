@@ -12,17 +12,19 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <section class="store--title">
-      <div class="container store--title-h2">
+    <section class="page--title">
+      <div class="container page--title-h2">
         <h2>門市據點</h2>
       </div>
     </section>
-    <div class="store--select_area">
+    <div class="page--select_area">
       <div class="container">
         <form class="d-f">
           <label for="area">選擇地區</label>
           <select id="area">
             <option>台北地區</option>
+            <option>台中地區</option>
+            <option>高雄地區</option>
             <!-- 請問下拉是選單不能用placeholder屬性嗎?-->
             <!-- 旁邊的小三角形不太懂要怎麼製作 -->
           </select>
@@ -30,139 +32,147 @@
       </div>
     </div>
     <section class="store--stronghold">
-      <div class="container">
-        <ul class="store--stronghold_list d-f">
-          <li>
-            <img src="../assets/images/store-1.png" alt="store_img" />
+      <div class="container store--stronghold_cards d-f">
+        <div class="store--stronghold_list d-f">
+          <img src="../assets/images/store-1.png" alt="store_img" />
+          <div class="store--stronghold_item">
             <h3>台北中山旗艦店</h3>
-            <div class="store--stronghold_contact">
-              <p class="d-f">
+            <ul class="store--stronghold_contact">
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   call
                 </span>
                 電話：(02)000-1234
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   schedule
                 </span>
                 營業時間：10:00-21:00
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   room </span
                 >地址：台北市中山區南京東路25巷2-1號
-              </p>
-            </div>
-            <p class="store--stronghold_link">
-              <a href="store_taipei.html">詳細資訊</a>
-            </p>
-          </li>
-          <li>
-            <img src="../assets/images/store-2.png" alt="store_img" />
+              </li>
+            </ul>
+          </div>
+          <div class="store--stronghold_link">
+            <a href="store_taipei.html">詳細資訊</a>
+          </div>
+        </div>
+        <div class="store--stronghold_list d-f">
+          <img src="../assets/images/store-2.png" alt="store_img" />
+          <div class="store--stronghold_item">
             <h3>台北綠園店</h3>
-            <div class="store--stronghold_contact">
-              <p class="d-f">
+            <ul class="store--stronghold_contact">
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   call
                 </span>
                 電話：(02)000-2345
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   schedule
                 </span>
                 營業時間：10:00-21:00
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   room </span
                 >地址：台北市中正區復興南路 132-1 號
-              </p>
-            </div>
-            <p class="store--stronghold_link">
-              <a href="#">詳細資訊</a>
-            </p>
-          </li>
-          <li>
-            <img src="../assets/images/store-3.png" alt="store_img" />
+              </li>
+            </ul>
+          </div>
+          <div class="store--stronghold_link">
+            <a href="store_taipei.html">詳細資訊</a>
+          </div>
+        </div>
+        <div class="store--stronghold_list d-f">
+          <img src="../assets/images/store-3.png" alt="store_img" />
+          <div class="store--stronghold_item">
             <h3>台中清水旗艦店</h3>
-            <div class="store--stronghold_contact">
-              <p class="d-f">
+            <ul class="store--stronghold_contact">
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   call
                 </span>
                 電話：(02)000-1234
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   schedule
                 </span>
                 營業時間：10:00-21:00
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   room </span
                 >地址：台中市清水區經南一路 23 號 8 樓
-              </p>
-            </div>
-            <p class="store--stronghold_link">
-              <a href="#">詳細資訊</a>
-            </p>
-          </li>
-          <li>
-            <img src="../assets/images/store-2.png" alt="store_img" />
+              </li>
+            </ul>
+          </div>
+          <div class="store--stronghold_link">
+            <a href="store_taipei.html">詳細資訊</a>
+          </div>
+        </div>
+        <div class="store--stronghold_list d-f">
+          <img src="../assets/images/store-4.png" alt="store_img" />
+          <div class="store--stronghold_item">
             <h3>高雄中正形象店</h3>
-            <div class="store--stronghold_contact">
-              <p class="d-f">
+            <ul class="store--stronghold_contact">
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   call
                 </span>
                 電話：(07)000-2345
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   schedule
                 </span>
                 營業時間：10:00-21:00
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   room </span
                 >地址：高雄市苓雅區中正路 38 號 12 樓
-              </p>
-            </div>
-            <p class="store--stronghold_link">
-              <a href="#">詳細資訊</a>
-            </p>
-          </li>
-          <li>
-            <img src="../assets/images/store-1.png" alt="store_img" />
+              </li>
+            </ul>
+          </div>
+          <div class="store--stronghold_link">
+            <a href="store_taipei.html">詳細資訊</a>
+          </div>
+        </div>
+        <div class="store--stronghold_list d-f">
+          <img src="../assets/images/store-5.png" alt="store_img" />
+          <div class="store--stronghold_item">
             <h3>高雄夢時代店</h3>
-            <div class="store--stronghold_contact">
-              <p class="d-f">
+            <ul class="store--stronghold_contact">
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   call
                 </span>
-                電話：(07)000-1234
-              </p>
-              <p class="d-f">
+                電話：(02)000-1234
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   schedule
                 </span>
                 營業時間：10:00-21:00
-              </p>
-              <p class="d-f">
+              </li>
+              <li class="d-f">
                 <span class="store--stronghold_icon material-icons-outlined">
                   room </span
                 >地址：高雄市前鎮區中華一路 63 號 6 樓
-              </p>
-            </div>
-            <p class="store--stronghold_link">
-              <a href="#">詳細資訊</a>
-            </p>
-          </li>
-        </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="store--stronghold_link">
+            <a href="store_taipei.html">詳細資訊</a>
+          </div>
+        </div>
       </div>
     </section>
     <%- include('./layout/footer'); -%>

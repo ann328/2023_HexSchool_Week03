@@ -1,5 +1,11 @@
 @import "./base/Reset.scss";
+
+@import "./helpers/variables";
+
 @import "./utils/_utils.scss";
+@import "./utils/_title.scss";
+@import "./utils/_button.scss";
+
 @import "./base/base.scss";
 
 @import "./layout/header.scss";
@@ -10,3 +16,4 @@
 @import "./pages/series_frame_sunglasses";
 @import "./pages/store_stronghold";
 @import "./pages/store_taipei";
+@import "./pages/_common_problem.scss";

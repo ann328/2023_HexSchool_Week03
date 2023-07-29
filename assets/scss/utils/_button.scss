@@ -1,0 +1,43 @@
+.button-p {
+  width: 42px;
+  text-align: center;
+  a {
+    font-size: 18px;
+    padding: 12px 0;
+    color: $button;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+.button-p-se {
+  width: 81px;
+  text-align: center;
+  a {
+    font-size: 19px;
+    padding: 11.5px 0;
+    background: $bg-button;
+    color: $button;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+.block--button {
+  justify-content: center;
+  margin-bottom: 80px;
+  a {
+    display: block;
+    border: 1px solid $button;
+  }
+
+  @include tab {
+    .button-p-se {
+      a {
+        padding: 11px 0;
+      }
+    }
+  }
+}

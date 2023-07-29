@@ -8,16 +8,16 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
       rel="stylesheet"
     />
-    <title>store_stronghold</title>
+    <title>store_taipei</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <section class="taipei--title">
-      <div class="container taipei--title-h2">
+    <section class="page--title">
+      <div class="container page--title-h2">
         <h2>門市據點</h2>
       </div>
     </section>
-    <div class="taipei--select_area">
+    <div class="page--select_area">
       <div class="container">
         <form class="d-f">
           <label for="area">選擇地區</label>
@@ -29,6 +29,43 @@
         </form>
       </div>
     </div>
+    <div class="container taipei--stronghold d-f">
+      <div class="taipei--stronghold_item d-f">
+        <img src="../assets/images/store-1.png" alt="store_img" />
+        <div class="taipei--stronghold_name">
+          <h3>台北中山旗艦店</h3>
+          <ul class="taipei--stronghold_contact">
+            <li class="d-f">
+              <span class="taipei--stronghold_icon material-icons-outlined">
+                call
+              </span>
+              電話：(02)000-1234
+            </li>
+            <li class="d-f">
+              <span class="taipei--stronghold_icon material-icons-outlined">
+                schedule
+              </span>
+              營業時間：10:00-21:00
+            </li>
+            <li class="d-f">
+              <span class="taipei--stronghold_icon material-icons-outlined">
+                room </span
+              >地址：台北市中山區南京東路25巷2-1號
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="taipei--stronghold_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1938729061126!2d121.58450821091243!3d25.061417277706024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1690550965824!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>

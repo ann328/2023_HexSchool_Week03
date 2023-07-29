@@ -11,9 +11,11 @@ body {
   padding: 0 12px;
   @include tab {
     max-width: 920px;
+    padding: 0 36px;
   }
   @include phone {
-    max-width: 695px;
+    max-width: 743px;
+    padding: 0 12px;
   }
 }
 img {

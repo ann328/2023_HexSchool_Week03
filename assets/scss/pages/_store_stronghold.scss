@@ -1,80 +1,29 @@
-.store--title {
-  padding: 96px 0 32px 0;
-
-  &-h2 {
-    padding: 0 12px 32px 8px;
-  }
-
-  h2 {
-    border-left: 8px solid $secorday;
-    padding-left: 12px;
-    font-size: 48px;
-    font-weight: bold;
-  }
-
-  @include tab {
-    padding: 80px 0 32px 0;
-  }
-
-  @include phone {
-    padding: 40px 0 32px 0;
-
-    h2 {
-      font-size: 24px;
-    }
-  }
-}
-
-.store--select_area {
-  label {
-    font-size: 24px;
-    margin-right: 16px;
-  }
-
-  select {
-    width: 304px;
-    padding: 6px 12px;
-    border: 1px solid #ced4da;
-  }
-  @include phone {
-    label {
-      font-size: 16px;
-      margin-right: 8px;
-    }
-
-    select {
-      width: 73.6%;
-    }
-  }
-}
-
 .store--stronghold {
   padding: 40px 0px 80px 0px;
-
-  &_list {
+  &_cards {
     flex-wrap: wrap;
-    gap: 48px 24px;
-
-    li {
-      width: 416px;
-
-      img {
-        min-height: 224px;
-      }
-
-      h3 {
-        font-size: 24px;
-        padding: 8px 0 8px 24px;
-        border: 1px solid #dee2e6;
-      }
+    gap: 80px 24px;
+  }
+  &_list {
+    flex-direction: column;
+    width: 416px;
+    img {
+      min-height: 224px;
+    }
+  }
+  &_item {
+    h3 {
+      font-size: 24px;
+      padding: 8px 0 8px 24px;
+      border: 1px solid #dee2e6;
     }
   }
 
   &_contact {
-    padding: 19px 24px 16px 24px;
+    padding: 16px 24px 16px 24px;
     border: 1px solid #dee2e6;
 
-    p {
+    li {
       font-size: 20px;
       margin-bottom: 8px;
     }
@@ -90,11 +39,12 @@
     border: 1px solid #dee2e6;
 
     a {
+      border: 1px solid #dee2e6;
       text-align: center;
       display: block;
       padding: 12px 0;
       background-color: #000;
-
+      font-size: 19px;
       &:hover {
         color: $primary;
       }
@@ -102,21 +52,13 @@
   }
   @include tab {
     &_list {
-      padding-left: 24px;
-      //   不太懂這邊要怎麼至中，而且最後一個要靠左
-      gap: 24px;
-      li {
-        width: 45.16%;
-      }
+      width: 48.27%;
     }
   }
   @include phone {
-    padding: 40px 0px 64px 0px;
+    padding: 24px 0px 64px 0px;
     &_list {
-      padding-left: 0;
-      li {
-        min-width: 100%;
-      }
+      width: 100%;
     }
   }
 }
