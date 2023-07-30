@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 .blog {
   gap: 60px 24px;
   flex-direction: column;
@@ -12,10 +16,19 @@
 }
 .blog--item {
   gap: 24px;
-  img {
-    max-height: 400px;
+
+  &_img {
+    width: 50%;
+    a {
+      display: block;
+      img {
+        min-width: 100%;
+        max-height: 400px;
+      }
+    }
   }
   &_card {
+    width: 50%;
     @include df-jcsb;
     flex-direction: column;
     align-items: flex-end;
@@ -51,16 +64,26 @@
   }
   @include tab {
     gap: 24px;
-    img {
-      min-width: 48.27%;
-      max-height: 208px;
+    &_img {
+      a {
+        img {
+          max-height: 208px;
+        }
+      }
     }
+
     &_card {
       .d-b {
         display: none;
       }
       .d-n {
         display: block;
+        font-size: 16px;
+        color: $button;
+        &:hover {
+          color: $time;
+          background-color: #fff;
+        }
       }
       a {
         display: none;
@@ -86,10 +109,17 @@
   @include phone {
     gap: 8px;
     flex-direction: column;
-    img {
-      min-width: 100%;
+
+    &_img {
+      width: 100%;
+      a {
+        img {
+          min-width: 100%;
+        }
+      }
     }
     &_card {
+      width: 100%;
       .d-n {
         display: none;
       }
