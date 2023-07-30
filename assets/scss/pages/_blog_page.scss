@@ -1,0 +1,245 @@
+.page {
+  background-color: $secorday;
+  &--item {
+    @include df-jcsb;
+  }
+  &--nav {
+    background-color: $secorday;
+    a {
+      font-size: 20px;
+      display: block;
+      padding: 8px 48px 8px 0;
+    }
+    &_search {
+      display: block;
+    }
+    &_icon {
+      font-size: 35px;
+      padding: 5px;
+    }
+  }
+  @include phone {
+    &--nav {
+      li {
+        a {
+          font-size: 16px;
+          padding: 12px 0;
+        }
+        &:not(:last-child) {
+          a {
+            padding: 12px 25px 12px 0;
+          }
+        }
+      }
+      &_search {
+        display: none;
+      }
+    }
+  }
+}
+.page--breadcrumb {
+  padding: 24px 0 8px 0;
+  &_list {
+    color: #000;
+    &::after {
+      content: " / ";
+    }
+    &:last-child {
+      color: $primary;
+      &::after {
+        content: none;
+      }
+    }
+  }
+  @include tab {
+    padding: 8px 0;
+  }
+  @include phone {
+    padding: 16px 0 8px 0;
+  }
+}
+.page--tag {
+  margin-bottom: 8px;
+  a {
+    font-size: 24px;
+    color: $primary;
+    margin-right: 15px;
+  }
+  @include phone {
+    a {
+      font-size: 16px;
+      nr: 16px;
+    }
+  }
+}
+.page--main {
+  padding-bottom: 80px;
+  &_contain {
+    gap: 24px;
+  }
+  &_item {
+    max-width: 66.04%;
+    h2 {
+      font-size: 48px;
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    &_contain {
+      flex-direction: column;
+      gap: 40px;
+      &_img {
+        img {
+          margin-bottom: 8px;
+          min-height: 520px;
+        }
+        p {
+          color: $button;
+        }
+      }
+    }
+    &_share {
+      &_icon {
+        border-bottom: 1px solid $time;
+        padding-bottom: 16px;
+        p {
+          margin-right: 16px;
+        }
+        a {
+          display: block;
+          width: 24px;
+          height: 24px;
+          //這邊也是要用百分比嗎？？？
+          margin-right: 16px;
+          img {
+            display: block;
+          }
+        }
+      }
+    }
+    &_next {
+      @include df-jcsb;
+      margin-top: 24px;
+      &_link {
+        a {
+          color: #000;
+          &:hover {
+            color: $secorday;
+          }
+        }
+      }
+      &_back {
+        padding: 4px;
+        margin-right: 8px;
+      }
+      &_forward {
+        padding: 4px;
+        margin-left: 8px;
+      }
+    }
+  }
+  &_tags {
+    width: 32.09%;
+    p {
+      color: $primary;
+      font-size: 32px;
+    }
+    &_icon {
+      font-size: 32px;
+      padding: 10px 4px 10px 6px;
+      margin-right: 8px;
+    }
+    &_list {
+      a {
+        color: $primary;
+        font-size: 24px;
+        margin-right: 24px;
+      }
+    }
+  }
+  .d-n {
+    display: none;
+  }
+  @include tab {
+    &_item {
+      max-width: 69.35%;
+      h3 {
+        margin-bottom: 24px;
+      }
+      &_contain {
+        gap: 24px;
+        margin-bottom: 40px;
+        &_img {
+          img {
+            margin-bottom: 16px;
+            min-height: 320px;
+          }
+        }
+      }
+      &_share {
+        display: none;
+      }
+      &_next {
+        display: none;
+        @include df-jcsb;
+      }
+    }
+    &_tags {
+      p {
+        font-size: 16px;
+      }
+      &_icon {
+        font-size: 16px;
+        padding: 5px 2px 5px 3px;
+        margin-right: 0px;
+      }
+      &_list {
+        a {
+          font-size: 16px;
+          margin-right: 16px;
+        }
+      }
+    }
+    .d-n {
+      display: block;
+      width: 100%;
+    }
+  }
+  @include phone {
+    padding-bottom: 64px;
+    &_contain {
+      gap: 16px;
+    }
+    &_item {
+      max-width: 100%;
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      &_contain {
+        flex-direction: column;
+        gap: 16px;
+        &_img {
+          img {
+            min-height: 208px;
+          }
+        }
+      }
+      &_share {
+        display: none;
+      }
+      &_next {
+        display: none;
+      }
+    }
+    &_tags {
+      display: none;
+    }
+    .d-n {
+      display: none;
+    }
+  }
+}
