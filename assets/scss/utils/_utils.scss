@@ -55,7 +55,13 @@
 .d-f {
   display: flex;
 }
-
+.input {
+  width: 100%;
+  background-color: transparent;
+  padding: 6px 0 6px 12px;
+  border: 1px solid #000000;
+  margin: 8px 0 16px 0;
+}
 .opinion {
   resize: none;
   min-height: 136px;

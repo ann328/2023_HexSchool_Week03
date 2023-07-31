@@ -3,10 +3,11 @@
 @import "./helpers/variables";
 
 @import "./utils/_utils.scss";
-@import "./utils/_button.scss";
-@import "./utils/dropdown";
 
 @import "./base/base.scss";
+
+@import "./utils/_button.scss";
+@import "./utils/dropdown";
 @import "./utils/_title.scss";
 
 @import "./layout/header.scss";
