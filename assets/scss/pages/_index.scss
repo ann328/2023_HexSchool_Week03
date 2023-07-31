@@ -208,6 +208,9 @@
     gap: 24px;
     li {
       width: 25%;
+      a{
+        color: #000;
+      }
     }
   }
   img {
@@ -215,6 +218,7 @@
   }
   &-name {
     @include home--recommend-name;
+    // 問題一
   }
   @include tab {
     &-list {

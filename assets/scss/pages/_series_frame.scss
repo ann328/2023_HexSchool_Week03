@@ -44,12 +44,14 @@
   &_glasses {
     width: 50%;
     min-height: 296px;
+    // 請問這邊的高度要怎麼使用百分比顯示呢?
     background: center/cover no-repeat url(../images/product-header-1.png);
   }
 
   &_girl {
     width: 50%;
     min-height: 296px;
+    // 請問這邊的高度要怎麼使用百分比顯示呢?
     background: center/cover no-repeat url(../images/product-header-2.png);
   }
 

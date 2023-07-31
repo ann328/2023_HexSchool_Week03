@@ -22,6 +22,7 @@
   box-shadow: 0px 2px 6px $shadow;
   @include df-jcsb;
   flex-direction: column;
+  // 這邊使用fxdc+jcsb，就會需要添加高度，jcsb才會有作用，請問有更好的寫法嗎?
   height: 205px;
 }
 
@@ -65,15 +66,7 @@
   resize: none;
   min-height: 136px;
 }
-.checkboxs {
-  margin: 0px 4px 0 4px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: 1px solid #000000;
-  border-radius: 4px;
-  accent-color: #aa0601;
-}
+
 
 .product-bd {
   margin-right: 8px;
