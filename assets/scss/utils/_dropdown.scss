@@ -1,9 +1,14 @@
 .dropdown {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border-style: solid;
-    border-width: 5px 5px 0 5px;
-    border-color: #000000 transparent transparent transparent;
-    background-position: calc(100% - 12px);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  margin-left: 16px;
+  width: 304px;
+  padding: 6px 12px;
+  font-size: 18px;
+  background-color: transparent;
+  background: url("../images/QFkHEKOQfo-removebg-preview.png") no-repeat right
+    center transparent;
+  background-position: calc(100% - 12px);
 }

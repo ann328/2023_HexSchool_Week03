@@ -9,15 +9,15 @@
     }
   }
   &_name {
+    border: 1px solid #dee2e6;
     h3 {
       font-size: 24px;
       padding: 8px 0 8px 24px;
-      border: 1px solid #dee2e6;
     }
   }
   &_contact {
     padding: 16px 24px 16px 24px;
-    border: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
     li {
       font-size: 20px;
       margin-bottom: 8px;
@@ -56,11 +56,10 @@
         width: 100%;
       }
     }
-
+  }
+  @media (max-width: 576px) {
     &_map {
-      width: 100%;
       min-height: 208px;
-      // 不太懂這邊高度要怎麼設定比較恰當
     }
   }
 }

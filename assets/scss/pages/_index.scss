@@ -55,12 +55,6 @@
     li {
       text-align: center;
 
-      img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 16px;
-      }
-
       h4 {
         @include h4(24px, $secorday, normal, 8px);
       }
@@ -68,6 +62,11 @@
       p {
         text-align: left;
       }
+    }
+    &_img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
     }
   }
 
@@ -93,10 +92,13 @@
     &_list {
       li {
         max-width: 100%;
-        img {
-          margin-bottom: 24px;
-        }
+        // img {
+        //   margin-bottom: 24px;
+        // }
       }
+    }
+    &_img {
+      margin-bottom: 24px;
     }
   }
 }
@@ -136,22 +138,22 @@
         max-width: 48.276%;
       }
     }
-
-    @include phone {
-      padding: 40px 0;
-      h3 {
-        font-size: 24px;
-        margin-bottom: 24px;
-      }
-      &_list {
+  }
+  @include phone {
+    padding: 40px 0;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    &_list {
+      max-width: 100%;
+      li {
         max-width: 100%;
-        li {
-          max-width: 100%;
-        }
       }
     }
   }
 }
+
 .home--jointDesign {
   background: center/cover no-repeat url(../images/index-bg.png);
   text-align: center;
@@ -208,17 +210,24 @@
     gap: 24px;
     li {
       width: 25%;
-      a{
+      a {
         color: #000;
       }
     }
   }
   img {
-    height: 306px;
+    border-radius: 4px 4px 0 0;
+    // max-height: 306px;
+    //問題二
+    object-fit: cover;
   }
   &-name {
+    min-height: 205px;
+    //問題一
     @include home--recommend-name;
-    // 問題一
+    p {
+      flex-grow: 2;
+    }
   }
   @include tab {
     &-list {
@@ -260,17 +269,17 @@
     width: 50%;
     &-send {
       text-align: center;
-      a {
-        display: inline-block;
-        margin-top: 48px;
-        background-color: $primary;
-        color: #fff;
-        padding: 16px 176px;
-        border: none;
-        font-size: 64;
-        &:hover {
-          background-color: $secorday;
-        }
+    }
+    &-link {
+      display: inline-block;
+      margin-top: 48px;
+      background-color: $primary;
+      color: #fff;
+      padding: 16px 176px;
+      border: none;
+      font-size: 64;
+      &:hover {
+        background-color: $secorday;
       }
     }
   }
@@ -280,10 +289,8 @@
     }
     &-form {
       width: 77.42%;
-      &-send {
-        a {
-          padding: 16px 136px;
-        }
+      &-link {
+        padding: 16px 136px;
       }
     }
   }
@@ -295,11 +302,9 @@
     }
     &-form {
       width: 100%;
-      &-send {
-        a {
-          margin-top: 24px;
-          padding: 16px 142px;
-        }
+      &-link {
+        margin-top: 24px;
+        padding: 16px 142px;
       }
     }
   }

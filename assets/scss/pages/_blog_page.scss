@@ -20,17 +20,17 @@
   }
   @include phone {
     &--nav {
-      li {
+      // li {
+      a {
+        font-size: 16px;
+        padding: 12px 0;
+      }
+      &:not(:last-child) {
         a {
-          font-size: 16px;
-          padding: 12px 0;
-        }
-        &:not(:last-child) {
-          a {
-            padding: 12px 25px 12px 0;
-          }
+          padding: 12px 25px 12px 0;
         }
       }
+      // }
       &_search {
         display: none;
       }
@@ -89,44 +89,45 @@
     &_contain {
       flex-direction: column;
       gap: 40px;
-      &_img {
-        img {
-          margin-bottom: 8px;
-          min-height: 520px;
-        }
-        p {
-          color: $button;
-        }
+    }
+    &_img {
+      img {
+        margin-bottom: 8px;
+        min-height: 520px;
+        object-fit: cover;
+      }
+      p {
+        color: $button;
       }
     }
     &_share {
-      &_icon {
-        border-bottom: 1px solid $time;
-        padding-bottom: 16px;
-        p {
-          margin-right: 16px;
-        }
-        a {
-          display: block;
-          width: 24px;
-          height: 24px;
-          //請問這邊也是要用百分比嗎?
-          margin-right: 16px;
-          img {
-            display: block;
-          }
-        }
+      max-width: 66.04%;
+    }
+    &_icon {
+      border-bottom: 1px solid $time;
+      padding-top: 40px;
+      padding-bottom: 16px;
+      p {
+        margin-right: 16px;
+      }
+    }
+    &_link {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+      img {
+        display: block;
       }
     }
     &_next {
       @include df-jcsb;
       margin-top: 24px;
       &_link {
-        a {
-          color: #000;
-          &:hover {
-            color: $secorday;
-          }
+        align-items: center;
+        color: #000;
+        &:hover {
+          color: $secorday;
         }
       }
       &_back {
@@ -158,9 +159,6 @@
       }
     }
   }
-  .d-n {
-    display: none;
-  }
   @include tab {
     &_item {
       max-width: 69.35%;
@@ -170,21 +168,19 @@
       &_contain {
         gap: 24px;
         margin-bottom: 40px;
-        &_img {
-          img {
-            margin-bottom: 16px;
-            min-height: 320px;
-          }
+      }
+      &_img {
+        img {
+          //問題五
+          margin-bottom: 16px;
+          min-height: 320px;
         }
       }
       &_share {
-        display: none;
-      }
-      &_next {
-        display: none;
-        @include df-jcsb;
+        max-width: 100%;
       }
     }
+
     &_tags {
       p {
         font-size: 16px;
@@ -200,10 +196,6 @@
           margin-right: 16px;
         }
       }
-    }
-    .d-n {
-      display: block;
-      width: 100%;
     }
   }
   @include phone {
@@ -222,23 +214,17 @@
       &_contain {
         flex-direction: column;
         gap: 16px;
-        &_img {
-          img {
-            min-height: 208px;
-          }
+      }
+      &_img {
+        img {
+          min-height: 208px;
         }
       }
       &_share {
         display: none;
       }
-      &_next {
-        display: none;
-      }
     }
     &_tags {
-      display: none;
-    }
-    .d-n {
       display: none;
     }
   }

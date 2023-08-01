@@ -1,6 +1,7 @@
 .button-p {
   width: 42px;
   text-align: center;
+  border: 1px solid $button;
   a {
     font-size: 18px;
     padding: 12px 0;
@@ -14,6 +15,7 @@
 .button-p-se {
   width: 81px;
   text-align: center;
+  border: 1px solid $button;
   a {
     font-size: 19px;
     padding: 11.5px 0;
@@ -30,7 +32,6 @@
   margin-bottom: 80px;
   a {
     display: block;
-    border: 1px solid $button;
   }
 
   @include tab {

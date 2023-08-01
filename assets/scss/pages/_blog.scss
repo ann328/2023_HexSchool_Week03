@@ -20,6 +20,7 @@
       img {
         min-width: 100%;
         max-height: 400px;
+        object-fit: cover;
       }
     }
   }
@@ -31,13 +32,13 @@
     .d-n {
       display: none;
     }
-    a {
-      font-size: 36px;
-      color: $secorday;
-      &:hover {
-        background-color: #000;
-        color: #fff;
-      }
+  }
+  &_link {
+    font-size: 36px;
+    color: $secorday;
+    &:hover {
+      background-color: #000;
+      color: #fff;
     }
   }
   &_name {
@@ -61,10 +62,8 @@
   @include tab {
     gap: 24px;
     &_img {
-      a {
-        img {
-          max-height: 208px;
-        }
+      img {
+        max-height: 208px;
       }
     }
 
@@ -72,18 +71,18 @@
       .d-b {
         display: none;
       }
-      .d-n {
-        display: block;
-        font-size: 16px;
-        color: $button;
-        &:hover {
-          color: $time;
-          background-color: #fff;
-        }
+    }
+    .d-n {
+      display: block;
+      font-size: 16px;
+      color: $button;
+      &:hover {
+        color: $time;
+        background-color: #fff;
       }
-      a {
-        display: none;
-      }
+    }
+    &_link {
+      display: none;
     }
     &_name {
       h3 {
@@ -105,13 +104,10 @@
   @include phone {
     gap: 8px;
     flex-direction: column;
-
     &_img {
       width: 100%;
-      a {
-        img {
-          min-width: 100%;
-        }
+      img {
+        min-width: 100%;
       }
     }
     &_card {

@@ -6,22 +6,24 @@
   }
   &_list {
     flex-direction: column;
-    width: 32.09%;
+    width: calc((100% - 48px) / 3);
+    //問題四
     img {
       min-height: 224px;
+      object-fit: cover;
     }
   }
   &_item {
+    border: 1px solid #dee2e6;
     h3 {
       font-size: 24px;
       padding: 8px 0 8px 24px;
-      border: 1px solid #dee2e6;
     }
   }
 
   &_contact {
     padding: 16px 24px 16px 24px;
-    border: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
 
     li {
       font-size: 20px;
@@ -39,7 +41,6 @@
     border: 1px solid #dee2e6;
 
     a {
-      border: 1px solid #dee2e6;
       text-align: center;
       display: block;
       padding: 12px 0;
