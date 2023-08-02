@@ -20,7 +20,6 @@
   }
   @include phone {
     &--nav {
-      // li {
       a {
         font-size: 16px;
         padding: 12px 0;
@@ -30,7 +29,7 @@
           padding: 12px 25px 12px 0;
         }
       }
-      // }
+
       &_search {
         display: none;
       }
@@ -171,7 +170,7 @@
       }
       &_img {
         img {
-          //問題五
+          //問題4
           margin-bottom: 16px;
           min-height: 320px;
         }

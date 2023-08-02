@@ -44,14 +44,14 @@
   &_glasses {
     width: 50%;
     min-height: 296px;
-    // 問題3
+    // 問題2
     background: center/cover no-repeat url(../images/product-header-1.png);
   }
 
   &_girl {
     width: 50%;
     min-height: 296px;
-    // 問題3
+    // 問題2
     background: center/cover no-repeat url(../images/product-header-2.png);
   }
 
@@ -70,12 +70,12 @@
   @include phone {
     &_glasses {
       min-height: 136px;
-      // 問題3
+      // 問題2
     }
 
     &_girl {
       min-height: 136px;
-      // 問題3
+      // 問題2
     }
   }
 }

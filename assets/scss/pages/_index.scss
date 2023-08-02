@@ -92,9 +92,6 @@
     &_list {
       li {
         max-width: 100%;
-        // img {
-        //   margin-bottom: 24px;
-        // }
       }
     }
     &_img {
@@ -212,21 +209,22 @@
       width: 25%;
       a {
         color: #000;
+        height: 100%;
       }
     }
   }
   img {
     border-radius: 4px 4px 0 0;
     // max-height: 306px;
-    //問題二
+    //問題1
     object-fit: cover;
   }
   &-name {
-    min-height: 205px;
-    //問題一
+    // min-height: 205px;
     @include home--recommend-name;
-    p {
-      flex-grow: 2;
+    flex-grow: 1;
+    &-comtain {
+      margin-bottom: 72px;
     }
   }
   @include tab {
