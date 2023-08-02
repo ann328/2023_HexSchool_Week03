@@ -210,6 +210,9 @@
       a {
         color: #000;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        //跟小組組員yun學到的方法，目的是為了讓行內樣式的a標籤可以對寬高有反應
       }
     }
   }
@@ -223,6 +226,7 @@
     // min-height: 205px;
     @include home--recommend-name;
     flex-grow: 1;
+    //再來這邊的flex-grow就會因為a標籤的高度100％有作用
     &-comtain {
       margin-bottom: 72px;
     }
